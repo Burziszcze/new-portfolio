@@ -1,4 +1,4 @@
-# newportfolio
+# new-portfolio page
+## still in progress ##
 
-https://burziszcze.github.io/newportfolio/
-# new-portfolio
+link: https://burziszcze.github.io/new-portfolio/
