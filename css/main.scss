@@ -334,7 +334,7 @@ h1 {
 }
 
 #header-img {
-  background-image: url("/images/header-img.jpg");
+  background-image: url("img/header-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -357,7 +357,7 @@ h1 {
 
 .parallax-img {
   /* The image used */
-  background-image: url("/images/parallax-img.jpg");
+  background-image: url("img/parallax-img.jpg");
   /* Set a specific height */
   min-height: 400px;
   /* Create the parallax scrolling effect */
