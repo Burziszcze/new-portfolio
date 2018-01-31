@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Lato);
 $color-background: #F5F5F5;
@@ -138,12 +138,6 @@ h6 {
       width: 100%;
     }
   }
-}
-
-h1 {
-  position: relative;
-  text-align: center;
-  font-family: 'Vollkorn', sans-serif;
 }
 
 .button_container {
@@ -332,6 +326,42 @@ h1 {
     left: 0;
   }
 }
+/* Skills */
+#skills {
+  color: #202020;
+  background-color: #eeeeee;
+
+  h2,
+  p {
+    // margin-left: 10px;
+    // margin-right: 10px;
+  }
+
+  h2 {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+.skills-item {
+  padding: 40px;
+  text-align: center;
+
+  p {
+    padding-top: 20px;
+  }
+}
+
+#skills i {
+  font-size: 4em;
+  // padding: 25px 25px 35px;
+  transition: 0.7s;
+}
+
+#skills i:hover {
+  cursor: pointer;
+  color: $color-hamburger;
+}
 
 #header-img {
   background-image: url("/img/header-img.jpg");
@@ -354,31 +384,141 @@ h1 {
     color: $color-active;
   }
 }
+// buttons
 
-.parallax-img {
-  /* The image used */
-  background-image: url("/img/parallax-img.jpg");
-  /* Set a specific height */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0;
+}
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB;
+}
+
+input[type="submit"],
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.button-green,
+.button-green:focus,
+.button-green:active {
+  color: #202020;
+  background-color: $color-green;
+  border-color: $color-green;
+}
+
+input[type="submit"]:hover,
+.button-green:hover {
+  color: #fff;
+  background-color: $color-green-hover;
+  border-color: $color-green-hover;
+}
+
+.parallax-img-1 {
+  background-image: url("/img/parallax-img-1.jpg");
   min-height: 400px;
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  h2,
+  h1,
   p {
     color: $color-link;
     text-align: center;
-    vertical-align:middle;
+    font-family: $main-font;
   }
 
-  h2 {
-    // font-size: 20px;
+  h1 {
+    padding-top: 100px;
+    color: $color-green;
+    font-weight: bold;
+    font-size: 5.0rem;
   }
 
   p {
-    // font-size: 10px;
+    font-size: 3.0rem;
+  }
+}
+
+.parallax-img-2 {
+  background-image: url("/img/parallax-img-2.jpg");
+  min-height: 350px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1,
+  p {
+    color: $color-background;
+    text-align: center;
+    font-family: $main-font;
+  }
+
+  h1 {
+    padding-top: 100px;
+    color: $color-background;
+    font-weight: bold;
+    font-size: 5.0rem;
+  }
+
+  p {
+    font-size: 3.0rem;
   }
 }
 
@@ -398,15 +538,27 @@ h1 {
 }
 /* CONTACT FORM */
 .contact {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-#contact {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 30px;
   background-color: #262626;
   color: #F2F2F2;
+  .contact-title {
+    h1,
+    p {
+      color: $color-background;
+      text-align: center;
+      font-family: $main-font;
+    }
+
+    h1 {
+      color: $color-background;
+      font-size: 5.0rem;
+    }
+
+    p {
+      font-size: 3.0rem;
+      padding-bottom: 15px;
+    }
+  }
 }
 
 .contact-content {
@@ -472,30 +624,6 @@ input[type=text]:focus {
   background-color: #262626;
 }
 
-.contact-form input[type="submit"] {
-  background-color: #36b03c;
-  font-size: 20px;
-  color: #F2F2F2;
-  padding: 15px 10px;
-  margin-top: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  letter-spacing: 2px;
-  outline: none;
-  width: auto;
-}
-
-.contact-form input[type="submit"]:hover {
-  background-color: #37b93d;
-}
-
-.section-title h1 {
-  letter-spacing: 5px;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
 .footer-social-icons {
   color: $color-link;
   letter-spacing: 2px;
@@ -517,7 +645,7 @@ input[type=text]:focus {
 .footer-top {
   width: 100%;
   padding-top: 10px;
-  background-color: #030303;
+  background-color: #090909;
   color: $color-link;
   text-align: center;
   height: 50px;
@@ -528,7 +656,7 @@ input[type=text]:focus {
 .footer-bottom {
   letter-spacing: 2px;
   padding-top: 10px;
-  background-color: #000000;
+  background-color: #020202;
   width: 100%;
   height: 100%;
   color: $color-link;

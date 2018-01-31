@@ -11,6 +11,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
 
 </head>
@@ -18,10 +19,8 @@
 <body>
   <header>
     <div id="header-img">
-      <div class="container">
-        <h1 class="heading">Paul Vegan</h1>
-        <h3 class="description">This is my portfolio page</h3>
-      </div>
+      <h1 class="heading">Paul Vegan</h1>
+      <h3 class="description">This is my portfolio page</h3>
     </div>
     <div class="button_container" id="toggle">
       <span class="top"></span>
@@ -32,16 +31,16 @@
     <div class="overlay" id="overlay">
       <nav class="overlay-menu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#works">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" id="home-button">Home</a></li>
+          <li><a href="#about" id="about-button">About</a></li>
+          <li><a href="#works" id="works-button">Work</a></li>
+          <li><a href="#contact" id="contact-button">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <section id="#about" class="about">
+    <section id="about" class="about">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6 avatar center-xs">
@@ -56,12 +55,12 @@
       </div>
     </section>
     <section id="parallax-img">
-      <div class="parallax-img">
-        <h2>Hire me!</h2>
-        <p>let me make your own website</p>
+      <div class="parallax-img-1">
+        <h1 class="heading">Hire me!</h1>
+        <p class="description">let me make your own website</p>
       </div>
     </section>
-    <section id="#works" class="works">
+    <!-- <section id="works" class="works">
       <div class="container-fluid center">
         <div class="row">
           <div class="col-xs-12 col-sm-6">
@@ -87,20 +86,88 @@
         </div>
       </div>
     </section>
+    <section id="parallax-img">
+      <div class="parallax-img-2">
+        <h1>make my dreams</h1>
+        <p>come true</p>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <h2>Technology stack</h2>
+        <p>
+          I present technologies that I have learned and use in my everyday work, which brings me closer to becoming a full-stack developer</p>
 
+
+        <div class="row">
+          <div class="col-md-3 col-xs-6">
+            <div class="skills-item">
+              <i class="devicon-html5-plain"></i>
+              <p>HTML 5</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="skills-item">
+              <i class="devicon-css3-plain"></i>
+              <p>CSS 3</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="skills-item">
+              <i class="devicon-javascript-plain"></i>
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="skills-item">
+              <i class="devicon-vuejs-plain"></i>
+              <p>Vue</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="skills-item">
+              <i class="devicon-sass-original"></i>
+              <p>Sass</p>
+
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="skills-item">
+              <i class="devicon-nodejs-plain"></i>
+              <p>Node JS</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="skills-item">
+              <i class="devicon-bootstrap-plain"></i>
+              <p>Bootstrap</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="skills-item">
+              <i class="devicon-git-plain"></i>
+              <p>Git</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
     <section id="contact" class="contact">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 col-xs-12">
-            <div class="section-title">
-              <h1>Napisz do mnie</h1>
-              <hr>
-              <br>
+            <div class="contact-title">
+              <h1>contact with me</h1>
+              <p>leave me a message</p>
             </div>
           </div>
           <div class="col-sm-12 col-md-6 contact-info">
-            <p class="contact-content"><strong>Jestem młodym web developerem, wciąż szukającym swojego miejsca na świecie, chciałbym realizować się i spełniać w branży IT </strong></p>
-            <p>daj mi szansę, skontaktuj się ze mną i zleć wykonanie własnej strony!</p>
+            <p class="contact-content">
+              <strong>I am a young web developer, still looking for my place in the world of IT,
+              I'm developing myself, let me learn more</strong>
+            </p>
+            <p>
+              give me a chance, contact me and get your own website!</p>
             <p class="st-phone"><i class="fa fa-mobile"></i> <strong>+48 739-623-918</strong></p>
             <p class="st-email"><i class="fa fa-envelope-o"></i> <strong>buurzuum@gmail.com</strong></p>
           </div>
@@ -108,16 +175,16 @@
             <form action="" class="contact-form" name="contact-form" method="post">
               <div class="row">
                 <div class="col-sm-6 col-xs-12">
-                  <input type="text" name="name" required="required" placeholder="Imię">
+                  <input type="text" name="name" required="required" placeholder="Name">
                 </div>
                 <div class="col-sm-6 col-xs-12">
                   <input type="email" name="email" required="required" placeholder="E-mail">
                 </div>
                 <div class="col-xs-12">
-                  <textarea name="message" required="required" cols="60" rows="5" placeholder="Wiadomość"></textarea>
+                  <textarea name="message" required="required" cols="60" rows="5" placeholder="Dear Paweł..."></textarea>
                 </div>
                 <div class="contact-form-button col-xs-12">
-                  <input type="submit" name="submit" value="Wyślij wiadomość" class="btn btn-send">
+                  <input type="submit" name="submit" value="Send message" class="button-green">
                 </div>
               </div>
             </form>
