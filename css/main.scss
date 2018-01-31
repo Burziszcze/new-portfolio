@@ -1,6 +1,8 @@
+// import google fonts
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Lobster); // variables
 $color-background: #F5F5F5;
 $color-main: #212121;
 $color-active: #FFF;
@@ -10,6 +12,7 @@ $color-green: #36b03c;
 $color-green-hover: #428c42;
 $button-height: 27px;
 $button-width: 35px;
+$lobster-font: 'Lobster', cursive;
 $main-font: 'Raleway', sans-serif;
 $logo-font: 'Lato', sans-serif;
 $main-font-size: 62.5%;
@@ -88,6 +91,25 @@ h6 {
 //   justify-content: space-around;
 //   font-family: $main-font;
 // }
+
+.preloader {
+  // display: none;
+  width: 200px;
+  height: 200px;
+  background-color: #202020;
+  border-radius: 50%;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: $lobster-font;
+    font-size: 170px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+  }
+}
 
 .center {
   text-align: center;
@@ -541,6 +563,7 @@ input[type="submit"]:hover,
   padding: 20px 30px;
   background-color: #262626;
   color: #F2F2F2;
+
   .contact-title {
     h1,
     p {
@@ -558,6 +581,11 @@ input[type="submit"]:hover,
       font-size: 3.0rem;
       padding-bottom: 15px;
     }
+  }
+
+  .st-phone {
+    letter-spacing: 2px;
+    font-family: $logo-font;
   }
 }
 

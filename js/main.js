@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  // show preloader
+  // $('.preloader').delay(2000).fadeIn(500);
   // open overlay navigation bar
   $('#toggle').click(function() {
     $(this).toggleClass('active');
