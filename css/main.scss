@@ -2,7 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://fonts.googleapis.com/css?family=Lobster); // variables
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+// variables
 $color-background: #F5F5F5;
 $color-main: #212121;
 $color-active: #FFF;
@@ -337,6 +338,8 @@ h6 {
 }
 /* works */
 .works {
+  background-color: $color-background;
+
   p {
     font-size: 20px;
   }
@@ -389,7 +392,8 @@ h6 {
   h1 {
     padding-top: 50px;
     text-align: center;
-    font-family: $main-font;
+    font-family: $lobster-font;
+    font-size: 100px;
     color: $color-active;
   }
 
@@ -607,12 +611,10 @@ input[type="submit"]:hover,
   padding: 8px 14px;
   width: 100%;
   margin-bottom: 20px;
-  border-radius: 10px;
-  border: 2px solid #dcdcdc;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: 2px solid $color-background;
   font-size: 20px;
   padding: 10px;
-  box-sizing: border-box;
   outline: none;
   color: $color-green;
   background-color: #262626;
@@ -626,22 +628,20 @@ input[type=text]:focus {
 }
 
 .contact-form textarea {
-  border: 1px solid;
   padding: 8px 14px;
   width: 100%;
   margin-bottom: 20px;
-  color: #428c42;
-  border: 2px solid #dcdcdc;
-  border-radius: 10px;
+  color: $color-green;
+  border: 2px solid $color-background;
+  border-radius: 5px;
   font-size: 20px;
-  box-sizing: border-box;
   outline: none;
   background-color: #262626;
 }
 
 .contact-form textarea:focus {
   border: 2px solid;
-  color: #428c42;
+  color: $color-green;
   background-color: #262626;
 }
 
