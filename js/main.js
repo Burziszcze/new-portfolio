@@ -34,4 +34,10 @@ $(document).ready(function() {
     }, 1000);
     $('#overlay').toggleClass('open');
   });
+  // scroll down header button
+  $('#scroll-down-button').click(function() {
+    $('html, body').animate({
+      scrollTop: $('.about').offset().top
+    }, 1000);
+  });
 });
