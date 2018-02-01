@@ -379,7 +379,7 @@ h6 {
 }
 
 #header-img {
-  background-image: url("/img/header.jpg");
+  background-image: url("../img/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -484,7 +484,7 @@ input[type="submit"]:hover,
 }
 
 .parallax-img-1 {
-  background-image: url("/img/parallax1.jpg");
+  background-image: url("../img/parallax1.jpg");
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -511,7 +511,7 @@ input[type="submit"]:hover,
 }
 
 .parallax-img-2 {
-  background-image: url("/img/parallax2.jpg");
+  background-image: url("../img/parallax2.jpg");
   min-height: 350px;
   background-attachment: fixed;
   background-position: center;
