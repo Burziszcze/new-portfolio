@@ -409,15 +409,18 @@ h6 {
     }
   }
 }
+
 .pulse-button:hover {
   color: $color-main;
   background-color: $color-background;
   border-color: $color-background;
 }
+
 .pulse-button:focus {
   color: $color-main;
   border-color: $color-background;
 }
+
 .pulse-button:active {
   color: $color-background;
   // background-color: $color-background;
