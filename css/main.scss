@@ -385,7 +385,7 @@ h6 {
 .pulse-button {
   color: $color-background;
   border-color: $color-background;
-  margin-top: 50px;
+  margin-top: 0px;
   box-shadow: 0 0 0 0 $color-active;
   -webkit-animation: pulse 1.5s infinite;
   @-webkit-keyframes pulse {
@@ -439,7 +439,7 @@ h6 {
   background-size: cover;
 
   h1 {
-    padding-top: 180px;
+    padding-top: 100px;
     text-align: center;
     font-family: $lobster-font;
     font-size: 100px;
