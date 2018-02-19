@@ -80,24 +80,29 @@ h6 {
   letter-spacing: 0;
 }
 
-.preloader {
-  // display: none;
-  width: 200px;
-  height: 200px;
-  background-color: #202020;
-  border-radius: 50%;
-  // display: flex;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
-    font-family: $lobster-font;
-    font-size: 170px;
-    margin: 0 auto;
-    color: white;
-    text-align: center;
-  }
-}
+// .preloader {
+//   width: 200px;
+//   height: 200px;
+//   background-color: #202020;
+//   border-radius: 50%;
+//   justify-content: center;
+//   align-items: center;
+//   // chuj
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 9999;
+//
+//   h1 {
+//     font-family: $lobster-font;
+//     font-size: 170px;
+//     margin: 0 auto;
+//     color: white;
+//     text-align: center;
+//   }
+// }
 
 .center {
   text-align: center;
@@ -348,12 +353,12 @@ h6 {
 }
 /* Skills */
 .skills {
+  padding-top: 40px;
   color: #202020;
   background-color: #eeeeee;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-
+  // margin: 0;
+  // padding: 0;
   h2,
   p {
     text-align: center;
@@ -731,10 +736,6 @@ input[type=text]:focus {
     text-decoration: none;
   }
 
-  a:hover {
-    color: $color-link;
-  }
-
   .fa-facebook-f {
     color: #3b5998;
   }
@@ -753,6 +754,34 @@ input[type=text]:focus {
 
   .fa-lastfm {
     color: #db1302;
+  }
+
+  .fa-spotify {
+    color: #1db954;
+  }
+
+  .fa-facebook-f:hover {
+    color: $color-link;
+  }
+
+  .fa-twitter:hover {
+    color: $color-link;
+  }
+
+  .fa-github:hover {
+    color: $color-link;
+  }
+
+  .fa-linkedin-in:hover {
+    color: $color-link;
+  }
+
+  .fa-lastfm:hover {
+    color: $color-link;
+  }
+
+  .fa-spotify:hover {
+    color: $color-link;
   }
 }
 
