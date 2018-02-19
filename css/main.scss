@@ -16,6 +16,7 @@ $lobster-font: 'Lobster', cursive;
 $main-font: 'Raleway', sans-serif;
 $logo-font: 'Lato', sans-serif;
 $main-font-size: 62.5%;
+$font-lobster: 'Lobster', cursive;
 
 * {
   box-sizing: border-box;
@@ -385,7 +386,7 @@ h6 {
 .pulse-button {
   color: $color-background;
   border-color: $color-background;
-  margin-top: 0px;
+  margin-top: 0;
   box-shadow: 0 0 0 0 $color-active;
   -webkit-animation: pulse 1.5s infinite;
   @-webkit-keyframes pulse {
@@ -632,6 +633,28 @@ input[type="submit"]:hover,
   .st-phone {
     letter-spacing: 2px;
     font-family: $logo-font;
+
+    .fa-mobile {
+      color: $color-hamburger;
+    }
+  }
+
+  .st-email {
+    letter-spacing: 2px;
+    font-family: $logo-font;
+
+    .fa-envelope {
+      color: $color-hamburger;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-active;
+    }
+
+    a:hover {
+      color: $color-green-hover;
+    }
   }
 }
 
@@ -705,10 +728,31 @@ input[type=text]:focus {
 
   a {
     color: #424242;
+    text-decoration: none;
   }
 
   a:hover {
     color: $color-link;
+  }
+
+  .fa-facebook-f {
+    color: #3b5998;
+  }
+
+  .fa-twitter {
+    color: #55acee;
+  }
+
+  .fa-github {
+    color: #000000;
+  }
+
+  .fa-linkedin-in {
+    color: #007bb5;
+  }
+
+  .fa-lastfm {
+    color: #db1302;
   }
 }
 
